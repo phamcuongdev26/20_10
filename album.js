@@ -52,10 +52,7 @@
     const key = `flower.album.photo.20-10.v1.${index}`;
     let busy = false;
 
-    change.addEventListener('click', () => {
-      input.value = '';
-      input.click();
-    });
+    change.addEventListener('click', () => { input.value = ''; input.click(); });
     input.addEventListener('change', async () => {
       const file = input.files[0];
       if (!file || busy) return;
